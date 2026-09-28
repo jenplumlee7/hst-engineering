@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HST Engineering | Industrial Controls, Power & Mechanical Engineering</title>
+    <meta name="description" content="Tennessee-based industrial engineering firm providing controls, power, and mechanical engineering to manufacturing plants across the Southeast.">
+    <meta property="og:title" content="HST Engineering, LLC">
+    <meta property="og:description" content="Industrial controls, power and mechanical engineering for manufacturing plants.">
+    <meta property="og:type" content="website">
+    <style>
+        :root {
+            --deep-blue: #1e3a5f;
+            --charcoal: #2d3748;
+            --off-white: #f8f9fa;
+            --light-gray: #e9ecef;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: var(--charcoal);
+            background: white;
+        }
+        .container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-text {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            color: var(--deep-blue);
+        }
+        .logo-sub {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: #64748b;
+            text-transform: uppercase;
+        }
+        nav a {
+            color: var(--charcoal);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+        }
+        nav a:hover {
+            color: var(--deep-blue);
+        }
+        .hero {
+            padding: 120px 0 80px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 24px;
+            color: var(--deep-blue);
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 620px;
+            margin: 0 auto 32px;
+            color: #475569;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--deep-blue);
+            color: white;
+            padding: 14px 32px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background: #162d4a;
+            transform: translateY(-1px);
+        }
+        section {
+            padding: 80px 0;
+        }
+        h2 {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--deep-blue);
+            margin: 0 0 40px;
+        }
+        .competencies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: var(--off-white);
+            padding: 32px;
+            border-radius: 8px;
+            border: 1px solid var(--light-gray);
+        }
+        .card h3 {
+            font-size: 20px;
+            margin: 0 0 12px;
+            color: var(--deep-blue);
+        }
+        .service-area {
+            background: var(--off-white);
+            padding: 60px 0;
+        }
+        .contact-form {
+            max-width: 520px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        textarea { min-height: 140px; resize: vertical; }
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid var(--light-gray);
+            font-size: 14px;
+            color: #64748b;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div>
+                        <div class="logo-text">HST</div>
+                        <div class="logo-sub">Engineering</div>
+                    </div>
+                </div>
+                <nav>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Industrial engineering<br>for manufacturing plants.</h1>
+            <p>Controls, power, and mechanical engineering delivered by senior engineers with the depth to embed on-site for months at a time.</p>
+            <a href="#contact" class="btn">Talk to an engineer</a>
+        </div>
+    </section>
+
+    <!-- Competencies -->
+    <section id="competencies">
+        <div class="container">
+            <h2>Core competencies</h2>
+            <div class="competencies">
+                <div class="card">
+                    <h3>Industrial controls engineering</h3>
+                    <p>PLC and HMI design and programming, control system upgrades and migrations, integration with plant equipment, commissioning and startup support.</p>
+                </div>
+                <div class="card">
+                    <h3>Power engineering</h3>
+                    <p>Power distribution design, arc-flash and short-circuit studies, protection and coordination, stamped drawings and engineer-of-record services.</p>
+                </div>
+                <div class="card">
+                    <h3>Embedded engineering support</h3>
+                    <p>Placing an engineer or tech on site for months at a time, backed by senior subject-matter experts — the model most small firms cannot credibly offer.</p>
+                </div>
+                <div class="card">
+                    <h3>Quality programs & regulated industry</h3>
+                    <p>NQA-1 program experience and nuclear design background. We bring documented rigor to plants that require it.</p>
+                </div>
+                <div class="card">
+                    <h3>Multi-state licensure</h3>
+                    <p>The ability to seal work wherever the client operates, with additional registrations obtained as projects require.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area">
+        <div class="container">
+            <h2>Service area</h2>
+            <p style="max-width: 620px; font-size: 18px;">Based in Tennessee. Serving industrial facilities across the Southeast, with the ability to support projects nationally.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="company" placeholder="Company">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn">Send message</button>
+                </form>
+                <p style="margin-top: 24px; font-size: 14px; color: #64748b;">
+                    Certificates of insurance available on request.<br>
+                    info@hst-engineering.com • (placeholder phone)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>HST Engineering, LLC • Tennessee • © 2026</div>
+                <div><a href="#" style="color: #64748b;">Privacy</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
