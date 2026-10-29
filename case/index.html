@@ -8,272 +8,126 @@
     <meta property="og:title" content="HST Case | HST Engineering">
     <meta property="og:description" content="A private AI troubleshooting assistant built on your plant’s own manuals, drawings, PLC exports, and fault history.">
     <meta property="og:type" content="website">
-    
-    <!-- Favicon (Option 2 - matches wordmark font) -->
+    <meta name="theme-color" content="#1e3a5f">
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='82' font-size='78' font-weight='700' fill='%231e3a5f' font-family='system-ui, -apple-system, sans-serif'%3EHST%3C/text%3E%3C/svg%3E">
-    <style>
-        :root {
-            --deep-blue: #1e3a5f;
-            --charcoal: #2d3748;
-            --off-white: #f8f9fa;
-            --light-gray: #e9ecef;
-        }
-        * { box-sizing: border-box; }
-        body {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-            color: var(--charcoal);
-            background: white;
-        }
-        .container {
-            max-width: 1080px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        header {
-            padding: 24px 0;
-            border-bottom: 1px solid var(--light-gray);
-        }
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        .logo-text {
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: -1px;
-            color: var(--deep-blue);
-        }
-        .logo-sub {
-            font-size: 11px;
-            font-weight: 500;
-            letter-spacing: 2px;
-            color: #64748b;
-            text-transform: uppercase;
-        }
-        nav a {
-            color: var(--charcoal);
-            text-decoration: none;
-            font-weight: 500;
-            padding: 8px 16px;
-        }
-        nav a:hover {
-            color: var(--deep-blue);
-        }
-        .hero {
-            padding: 72px 0 64px;
-            text-align: center;
-        }
-        .hero h1 {
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 1.1;
-            margin: 0 0 24px;
-            color: var(--deep-blue);
-        }
-        .hero p {
-            font-size: 20px;
-            max-width: 620px;
-            margin: 0 auto 32px;
-            color: #475569;
-        }
-        .btn {
-            display: inline-block;
-            background: var(--deep-blue);
-            color: white;
-            padding: 14px 32px;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-        }
-        .btn:hover {
-            background: #162d4a;
-            transform: translateY(-1px);
-        }
-        section {
-            padding: 80px 0;
-        }
-        h2 {
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--deep-blue);
-            margin: 0 0 40px;
-        }
-        .competencies {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 24px;
-        }
-        .card {
-            background: var(--off-white);
-            padding: 32px;
-            border-radius: 8px;
-            border: 1px solid var(--light-gray);
-        }
-        .card h3 {
-            font-size: 20px;
-            margin: 0 0 12px;
-            color: var(--deep-blue);
-        }
-        .service-area {
-            background: var(--off-white);
-            padding: 60px 0;
-        }
-        .contact-form {
-            max-width: 520px;
-        }
-        input, textarea {
-            width: 100%;
-            padding: 14px;
-            border: 1px solid #cbd5e1;
-            border-radius: 6px;
-            font-size: 16px;
-            margin-bottom: 16px;
-        }
-        textarea { min-height: 140px; resize: vertical; }
-        footer {
-            padding: 40px 0;
-            border-top: 1px solid var(--light-gray);
-            font-size: 14px;
-            color: #64748b;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 12px;
-        }
-        .note {
-            font-size: 14px;
-            color: #64748b;
-            margin-top: 24px;
-            font-style: italic;
-        }
-    </style>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <a href="/"><img src="../logo.jpg" alt="HST Engineering" style="height: 42px; width: auto; display: block;"></a>
-                </div>
+                <a href="/" class="logo"><img src="/logo.jpg" alt="HST Engineering" width="78" height="42"></a>
                 <nav>
-                    <a href="/case">HST Case</a>
+                    <a href="/case" aria-current="page">HST Case</a>
                     <a href="#contact">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>HST Case</h1>
-            <p>A private AI troubleshooting assistant built on your plant’s own manuals, drawings, PLC exports, and fault history. Used daily by HST’s engineers and tuned by them as they go.</p>
-            <a href="#contact" class="btn">Talk to an engineer</a>
-        </div>
-    </section>
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <h1>HST Case</h1>
+                <p>A private AI troubleshooting assistant built on your plant’s own manuals, drawings, PLC exports, and fault history. Used daily by HST’s engineers and tuned by them as they go.</p>
+                <a href="#contact" class="btn">Talk to an engineer</a>
+            </div>
+        </section>
 
-    <!-- Demo video -->
-    <section style="padding: 0;">
-        <div class="container">
-            <video
-                src="/HST-Case-Demo-snappy.mp4"
-                muted
-                loop
-                autoplay
-                playsinline
-                preload="auto"
-                aria-label="HST Case demo"
-                style="display: block; width: 100%; height: auto; border: 0; outline: none; clip-path: inset(0.7% 0.25% 0.15% 0);"
-            ></video>
-        </div>
-    </section>
+        <!-- Demo video -->
+        <section class="demo">
+            <div class="container">
+                <video
+                    src="/HST-Case-Demo-snappy.mp4"
+                    poster="/case-demo-poster.jpg"
+                    width="1920"
+                    height="962"
+                    muted
+                    loop
+                    autoplay
+                    playsinline
+                    preload="auto"
+                    aria-label="HST Case demo"
+                ></video>
+            </div>
+        </section>
 
-    <!-- What it does -->
-    <section>
-        <div class="container">
-            <h2>What it does</h2>
-            <div class="competencies">
-                <div class="card">
-                    <h3>Answers from your documents</h3>
-                    <p>A technician asks about a fault code, a wiring question, or a photo of a panel, from a phone on the floor, and gets the answer with the manual and page it came from. Case reads your manual for that exact drive first, quotes the page, and says when it found nothing.</p>
-                </div>
-                <div class="card">
-                    <h3>Every fix recorded</h3>
-                    <p>Every question becomes a case the team can see and rate. Every case is a ticket that stays open until someone records the actual fix, searchable by line and section.</p>
-                </div>
-                <div class="card">
-                    <h3>It remembers</h3>
-                    <p>The next time anyone asks about that equipment, the answer leads with what fixed it last time.</p>
+        <!-- What it does -->
+        <section>
+            <div class="container">
+                <h2>What it does</h2>
+                <div class="competencies">
+                    <div class="card">
+                        <h3>Answers from your documents</h3>
+                        <p>A technician asks about a fault code, a wiring question, or a photo of a panel, from a phone on the floor, and gets the answer with the manual and page it came from. Case reads your manual for that exact drive first, quotes the page, and says when it found nothing.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Every fix recorded</h3>
+                        <p>Every question becomes a case the team can see and rate. Every case is a ticket that stays open until someone records the actual fix, searchable by line and section.</p>
+                    </div>
+                    <div class="card">
+                        <h3>It remembers</h3>
+                        <p>The next time anyone asks about that equipment, the answer leads with what fixed it last time.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Where it runs -->
-    <section class="service-area">
-        <div class="container">
-            <h2>Where it runs</h2>
-            <p style="max-width: 720px; font-size: 18px;">On dedicated NVIDIA-accelerated hardware hosted by HST, physically separate from every other customer, or in your own cloud tenant. Case never connects to a PLC, HMI, or control network; it reads documents people give it. Nothing goes to a public AI service.</p>
-        </div>
-    </section>
-
-    <!-- How you get it -->
-    <section>
-        <div class="container">
-            <h2>How you get it</h2>
-            <p style="max-width: 720px; font-size: 18px;">HST Case comes along with every HST engineering engagement at no charge. Plants that want it for their own engineers can license it as a dedicated system, set up by the same engineers who use it. Ask us for the plant offer.</p>
-            <p class="note">HST Engineering is an NVIDIA Inception member.</p>
-        </div>
-    </section>
-
-    <!-- What’s next -->
-    <section>
-        <div class="container">
-            <h2>What’s next</h2>
-            <ul style="max-width: 720px; font-size: 18px; line-height: 1.7; padding-left: 20px; margin: 0;">
-                <li>Library organized by line and section, with section-level prompting</li>
-                <li>A loss-ranked problem list: recurring faults scored by frequency, downtime, and cost, so engineers work the most expensive root causes first</li>
-                <li>Section bills of material with parts lookup</li>
-                <li>Management-of-change records</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <div>
-                <p style="max-width: 420px; font-size: 18px; margin-bottom: 16px;">
-                    For project inquiries and site visits, reach out directly.
-                </p>
-                <p style="font-size: 18px; margin: 0 0 8px;">
-                    <a href="mailto:cody@hst-eng.com" style="color: var(--deep-blue); text-decoration: none;">cody@hst-eng.com</a>
-                </p>
+        <!-- Where it runs -->
+        <section class="band">
+            <div class="container">
+                <h2>Where it runs</h2>
+                <p class="lead">On dedicated NVIDIA-accelerated hardware hosted by HST, physically separate from every other customer, or in your own cloud tenant. Case never connects to a PLC, HMI, or control network; it reads documents people give it. Nothing goes to a public AI service.</p>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-- How you get it -->
+        <section>
+            <div class="container">
+                <h2>How you get it</h2>
+                <p class="lead">HST Case comes along with every HST engineering engagement at no charge. Plants that want it for their own engineers can license it as a dedicated system, set up by the same engineers who use it. Ask us for the plant offer.</p>
+                <p class="note">HST Engineering is an NVIDIA Inception member.</p>
+            </div>
+        </section>
+
+        <!-- What’s next -->
+        <section class="band">
+            <div class="container">
+                <h2>What’s next</h2>
+                <ul class="list">
+                    <li>Library organized by line and section, with section-level prompting</li>
+                    <li>A loss-ranked problem list: recurring faults scored by frequency, downtime, and cost, so engineers work the most expensive root causes first</li>
+                    <li>Section bills of material with parts lookup</li>
+                    <li>Management-of-change records</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p class="lead">For project inquiries and site visits, reach out directly.</p>
+                <p class="lead"><a href="mailto:cody@hst-eng.com" class="contact-email">cody@hst-eng.com</a></p>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
-                <div>HST Engineering, LLC • NVIDIA Inception Member • Tennessee • © 2026</div>
-                <div><a href="#" style="color: #64748b;">Privacy</a></div>
-            </div>
+            HST Engineering, LLC • NVIDIA Inception Member • Tennessee • © 2026
         </div>
     </footer>
+
+    <script>
+        // Respect reduced-motion: show the poster with controls instead of autoplaying.
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            var v = document.querySelector('.demo video');
+            v.removeAttribute('autoplay');
+            v.pause();
+            v.controls = true;
+        }
+    </script>
 </body>
 </html>
